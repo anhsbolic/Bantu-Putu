@@ -1,7 +1,9 @@
-package id.bantu.bantuputu;
+package id.bantu.bantuputu.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import id.bantu.bantuputu.R;
 
 public class MainActivity extends AppCompatActivity {
 
