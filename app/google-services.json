@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "788193125477",
+    "firebase_url": "https://bantu-c9eee.firebaseio.com",
+    "project_id": "bantu-c9eee",
+    "storage_bucket": "bantu-c9eee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788193125477:android:3fdc02bdb2aa0674",
+        "android_client_info": {
+          "package_name": "id.bantu.bantuputu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788193125477-11g8orp89ulfp32sqsgi7e5ia4hijrt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsPq03QfiVlLbmf5EX75E8M9Tjqm3E4is"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
