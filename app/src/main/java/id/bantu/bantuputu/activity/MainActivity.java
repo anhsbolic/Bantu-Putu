@@ -1,5 +1,6 @@
 package id.bantu.bantuputu.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -56,11 +57,13 @@ public class MainActivity extends AppCompatActivity {
                 new MyImagesAdapter.OnItemClickListener(){
                     @Override
                     public void onItemClick(MyImage myImage) {
-                        String strId = myImage.getIdMyImage();
-                        String strName = myImage.getName();
-                        String strUrl = myImage.getUrl();
-                        String strToast = strId + "-" + strName + "-" + strUrl;
-                        Toast.makeText(MainActivity.this, strToast, Toast.LENGTH_LONG).show();
+                        goToDetailImageActivity(myImage);
+
+                        //String strId = myImage.getIdMyImage();
+                        //String strName = myImage.getName();
+                        //String strUrl = myImage.getUrl();
+                        //String strToast = strId + "-" + strName + "-" + strUrl;
+                        //Toast.makeText(MainActivity.this, strToast, Toast.LENGTH_LONG).show();
                     }
                 });
         rvMyImages.setAdapter(adapterRvMyImages);
@@ -104,5 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void goToDetailImageActivity(MyImage myImage) {
+        Intent intent = new Intent(MainActivity.this, DetailImageActivity.class);
+        intent.putExtra(DetailImageActivity.DATA_IMAGE, myImage);
+        startActivity(intent);
     }
 }
